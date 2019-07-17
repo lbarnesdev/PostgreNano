@@ -1,4 +1,4 @@
-FROM nanopwsh
+FROM mcr.microsoft.com/powershell:6.2.1-nanoserver-1803
 
 #### set powershell for RUN
 SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
