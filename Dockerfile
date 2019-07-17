@@ -6,6 +6,7 @@ SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference
 ### copy required files into img
 WORKDIR /RequiredSoftware
 COPY RequiredSoftware .
+COPY Scripts ./Scripts
 
 ### unzip postgresql
 ### copy c++ redistributable
